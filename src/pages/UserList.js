@@ -9,7 +9,7 @@ const UserList = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        axios.get('https://dummyjson.com/users')
+        axios.get('https://dummyjson.com/users')   
             .then(response => {
                 setUsers(response.data.users);
             })

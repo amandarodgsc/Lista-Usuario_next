@@ -9,8 +9,8 @@ const UserDetails = () => {
     const [user, setUser] = useState(null);
     const { id } = useParams(); // Obtém o id do usuário da URL
 
-    useEffect(() => {
-        // Requisição GET para buscar os detalhes do usuário
+    useEffect(() => {  
+        // Requisição GET para buscar os detalhes do usuario
         axios.get(`https://dummyjson.com/users/${id}`)
             .then(response => {
                 setUser(response.data);
